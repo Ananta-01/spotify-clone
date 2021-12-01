@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Zen+Kurenaido&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: antiquewhite;
+}
+nav ul{
+    display: flex;
+    list-style: none;
+    background-color: black;
+    height: 49px;
+    color: white;
+    align-items: center;
+
+}
+nav ul li{
+    padding: 0px 15px;
+}
+.brand img{
+    width: 38px;
+    padding: 0 10px;
+    
+}
+.brand{
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 1.3rem;
+}
+.container{
+    height: 70vh;
+    background-color: black;
+    color: white;
+    display: flex;
+    margin: 23px auto;
+    width: 70%;
+    border-radius: 13px;
+    padding: 15px;
+    background: url(/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: scroll;
+}
+.container::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .container {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+
+
+.buttom{
+    background-color: black;
+    position: sticky;
+    height: 100px;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+align-items: center;
+color: white;
+flex-direction: column;
+}
+#myprogressbar{
+    width: 80vw;
+    cursor: pointer;
+
+}
+.icons i{
+    margin: 5px 10px;
+    cursor: pointer;
+}
+.songitems{
+    height: 80px;
+    display: flex;
+    background: rgb(255, 254, 254);
+    color: rgb(0, 0, 0);
+    width: 80%;
+    justify-content: space-between;
+    align-items: center;
+    margin: 15px 0px;
+border-radius: 14px;
+}
+.songitems img{
+    width: 80px;
+}
+.timestamp{
+    padding: 1px 15px;
+}
+.fas{
+    padding: 0 10px;
+    cursor: pointer;
+}
+.songinfo{
+    position: absolute;
+    left: 10vw;
+}
+.songinfo img{
+    opacity: 0;
+    transition: opacity 1s ease-in;
+}
+
+@media screen and (max-width: 480px) {
+    
+    .title{
+        font-size: 6vw;
+    }
+    .songitems img{
+        width: 14vw;
+    }
+    .songitems{
+        height: 6vh;
+        overflow: -moz-hidden-unscrollable;
+    }
+    .timestamp{
+        padding: 1px 3px;
+    }
+    .songName{
+        font-size: 13px;
+    }
+    .songinfo{
+        position: absolute;
+        
+        top: 1px;
+        left: 56vw;   
+    }
+    .buttom{
+        height: 110px;
+    }
+    .container{
+        height: 75vh;
+    }
+  }
